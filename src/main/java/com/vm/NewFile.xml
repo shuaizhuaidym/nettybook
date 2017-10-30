@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+	<head>
+		<version>1.0</version>
+		<serviceType>AuthenService</serviceType>
+	</head>
+	<body>
+		<clientInfo>
+			<clientIP>172.16.7.80</clientIP>
+		</clientInfo>
+		<appId>msgi</appId>
+		<authen>
+			<authCredential authMode="cert">
+				<detach>MIID0AYJKoZIhvcNAQcCoIIDwTCCA70CAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCCAqMwggKfMIICCKADAgECAghtXlzt9otVuTANBgkqhkiG9w0BAQUFADBFMQswCQYDVQQGEwJDTjEMMAoGA1UEChMDSklUMRcwFQYDVQQLEw53d3cuaml0LmNvbS5jbjEPMA0GA1UEAxMGSklUIENBMB4XDTE0MDMyNDA4NDM0N1oXDTI0MDMyMTA4NDM0N1owWDELMAkGA1UEBhMCQ04xDDAKBgNVBAoMA0pJVDElMCMGCSqGSIb3DQEJARYWeWFubWluZ19kYWlAaml0LmNvbS5jbjEUMBIGA1UEAwwLeWFubWluZ19kYWkwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKfr28wBXNWZgiVR1UiCyj4Oyy/6x1rJv8FJeUlfi/gakA6gpWYClteqDTtz5IGPyF06JpkNXNrNJKubcvL3H9R14/b/BZ8G+YEuKOdvbcjmz2Bx0d+GAG8csQsw+57dQmMJ8j97gs5jXcG/ny0cg/26kuc2D8Ny5oYHkmhX/YFVAgMBAAGjgYQwgYEwHwYDVR0jBBgwFoAUz1a1tP/Xq/ZbpGLSLpuLoR8s0AcwHQYDVR0OBBYEFCva3kNAtXAQPdPdWWAOma9rUcrFMAsGA1UdDwQEAwIE8DAyBgNVHR8EKzApMCegJaAjhiFodHRwOi8vaml0Y3JsLmppdC5jb20uY24vY3JsNS5jcmwwDQYJKoZIhvcNAQEFBQADgYEAGivU+ybKRl/d/uSkmv/5bGw1tK/1VzYFcLwMHrf0bixZYeOADRXO/xujYwtmrkPda20anAwQE9T5EbJLFVn8HWCOaEuIIk2+NH4p6H4vQkwHnJpqBirsib60NYJS/WTOwnt96a8U1KB/LpkazNMtOlRjsEGuQycwdQPSYOyw9zoxgfYwgfMCAQEwUTBFMQswCQYDVQQGEwJDTjEMMAoGA1UEChMDSklUMRcwFQYDVQQLEw53d3cuaml0LmNvbS5jbjEPMA0GA1UEAxMGSklUIENBAghtXlzt9otVuTAJBgUrDgMCGgUAMA0GCSqGSIb3DQEBAQUABIGAS9OoooGpZxZsxrKJnk5YM96iMQ3F4VOic/cm/9FPM85JkZbD9bBY5VTsQZtupXZFO0UAyZCxy2aZq0Z4AQvprRRVoyY9oXWlfzqOOqDKvHAV1bqhUiHxXdIBLFqO7fwqnSYejtJVh51sN7ZOza9rF9BAf6V+c+0Q7++wES+uxGQ=
+				</detach>
+				<original>bnN3aGc4</original>
+			</authCredential>
+		</authen>
+		<accessControl>true</accessControl>
+		<attributes attributeType="all" />
+	</body>
+</message>
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+	<head>
+		<version>1.0</version>
+		<serviceType>AuthenService</serviceType>
+		<messageState>false</messageState>
+	</head>
+	<body>
+		<authResultSet allFailed="true">
+			<authResult authMode="cert" success="true" />
+		</authResultSet>
+		<accessControlResult>Permit</accessControlResult>
+		<attributes>
+			<attr name="loginname" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">CN=yanming_dai, EMAILADDRESS=yanming_dai@jit.com.cn, O=JIT, C=CN</attr>
+			<attr name="user.tt" namespace="http://www.jit.com.cn/ums/ns/user"></attr>
+			<attr name="user.type" namespace="http://www.jit.com.cn/ums/ns/user">2</attr>
+			<attr name="user.id" namespace="http://www.jit.com.cn/ums/ns/user">4028890b5a1c533e015a83c4c1b70079</attr>
+			<attr name="user.name" namespace="http://www.jit.com.cn/ums/ns/user">.........</attr>
+			<attr name="user.state" namespace="http://www.jit.com.cn/ums/ns/user">1</attr>
+			<attr name="user.uniquelyMark" namespace="http://www.jit.com.cn/ums/ns/user">yanming_dai</attr>
+			<attr name="user.idcard" namespace="http://www.jit.com.cn/ums/ns/user">110121198310216325</attr>
+			<attr name="user.lognName" namespace="http://www.jit.com.cn/ums/ns/user">cn=yanming_dai,ou=ipc,o=jit</attr>
+			<attr name="user.orgname" namespace="http://www.jit.com.cn/ums/ns/user">......JIT</attr>
+			<attr name="X509Certificate.SubjectDN" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">CN=yanming_dai, EMAILADDRESS=yanming_dai@jit.com.cn, O=JIT, C=CN</attr>
+			<attr name="X509Certificate.NotBefore" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">2014...03...24... 16:43:47</attr>
+			<attr name="_saml_cert_subject" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">CN=yanming_dai, EMAILADDRESS=yanming_dai@jit.com.cn, O=JIT, C=CN</attr>
+			<attr name="_saml_pki_cert_subject" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">CN=yanming_dai,E=yanming_dai@jit.com.cn,O=JIT,C=CN</attr>
+			<attr name="X509Certificate.IssuerDN" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">CN=JIT CA, OU=www.jit.com.cn, O=JIT, C=CN</attr>
+			<attr name="X509Certificate.SerialNumber" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">6d5e5cedf68b55b9</attr>
+			<attr name="X509Certificate.NotAfter" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">2024...03...21... 16:43:47</attr>
+			<attr name="X509Certificate.Base64" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">MIICnzCCAgigAwIBAgIIbV5c7faLVbkwDQYJKoZIhvcNAQEFBQAwRTELMAkGA1UEBhMCQ04xDDAKBgNVBAoTA0pJVDEXMBUGA1UECxMOd3d3LmppdC5jb20uY24xDzANBgNVBAMTBkpJVCBDQTAeFw0xNDAzMjQwODQzNDdaFw0yNDAzMjEwODQzNDdaMFgxCzAJBgNVBAYTAkNOMQwwCgYDVQQKDANKSVQxJTAjBgkqhkiG9w0BCQEWFnlhbm1pbmdfZGFpQGppdC5jb20uY24xFDASBgNVBAMMC3lhbm1pbmdfZGFpMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCn69vMAVzVmYIlUdVIgso+Dssv+sdayb/BSXlJX4v4GpAOoKVmApbXqg07c+SBj8hdOiaZDVzazSSrm3Ly9x/UdeP2/wWfBvmBLijnb23I5s9gcdHfhgBvHLELMPue3UJjCfI/e4LOY13Bv58tHIP9upLnNg/DcuaGB5JoV/2BVQIDAQABo4GEMIGBMB8GA1UdIwQYMBaAFM9WtbT/16v2W6Ri0i6bi6EfLNAHMB0GA1UdDgQWBBQr2t5DQLVwED3T3VlgDpmva1HKxTALBgNVHQ8EBAMCBPAwMgYDVR0fBCswKTAnoCWgI4YhaHR0cDovL2ppdGNybC5qaXQuY29tLmNuL2NybDUuY3JsMA0GCSqGSIb3DQEBBQUAA4GBABor1PsmykZf3f7kpJr/+WxsNbSv9Vc2BXC8DB639G4sWWHjgA0Vzv8bo2MLZq5D3WttGpwMEBPU+RGySxVZ/B1gjmhLiCJNvjR+Keh+L0JMB5yaagYq7Im+tDWCUv1kzsJ7femvFNSgfy6ZGszTLTpUY7BBrkMnMHUD0mDssPc6</attr>
+		</attributes>
+		<token>d2a290c0-28f1-448a-8554-62525508a92f</token>
+	</body>
+</message>

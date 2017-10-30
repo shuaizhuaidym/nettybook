@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message>
+	<head>
+		<version>1.0</version>
+		<serviceType>AuthenService</serviceType>
+	</head>
+	<body>
+		<clientInfo>
+			<clientIP>127.0.0.1</clientIP>
+		</clientInfo>
+		<appId>MODIFY</appId>
+		<authen>
+			<authCredential authMode="cert">
+				<detach>MIIFjQYJKoZIhvcNAQcCoIIFfj
+					CCBXoCAQExCzAJBgUrDgMCGgUAMAsGCSqGSIb3DQEHAaCCBFswggRXMIIDP6ADAgECAggQphEHfkpgez
+					ANBgkqhkiG9w0BAQUFADBKMQswCQYDVQQGEwJDTjEMMAoGA1UEChMDTU9GMS0wKwYDVQQDEyRQcml2YX
+					RlIENlcnRpZmljYXRlIEF1dGhvcml0eSBPZiBNT0YwHhcNMTYxMjA3MDY0MjMzWhcNMjYxMjA1MDY0Mj
+					MzWjCBijELMAkGA1UEBhMCQ04xDDAKBgNVBAoTA01PRjELMAkGA1UEChMCMDExCzAJBgNVBAgTAjAxMQ
+					swCQYDVQQHEwIwMDELMAkGA1UEBxMCMDAxCzAJBgNVBAsTAjA0MRswGQYDVQQMExIxMTAxMDIxOTY4MT
+					IwMzI3MjAxDzANBgNVBAMMBumrmOa9rjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA2ACas3BE9P
+					77/VP2a7FJwBFDMsG/lfwS1qekNnMw5m1/thPw+r0Kew6meQGSo945dpZDkvgjoOfO9z8f5LrJHm7Phm
+					/6U+Whmn5t4INHLOjhXgO117Un9MkkcmrIlWSlQhYud/CyTEriD8t3YsPR1gXstaysE6sLXa7nD/n6Qe
+					cCAwEAAaOCAYIwggF+MB8GA1UdIwQYMBaAFJb4S7KJrQAb2Qm/dCDwB+CLzQtbMIHxBgNVHR8Egekwge
+					YwQqBAoD6kPDA6MQswCQYDVQQGEwJDTjEMMAoGA1UEChMDTU9GMQwwCgYDVQQLEwNDUkwxDzANBgNVBA
+					MTBmNybDEzNDB4oHagdIZybGRhcDovL2xkYXAuY2EubW9mOjM4OS9jbj1jcmwxMzQsT1U9Q1JMLE89TU
+					9GLEM9Q04/Y2VydGlmaWNhdGVSZXZvY2F0aW9uTGlzdD9iYXNlP29iamVjdGNsYXNzPWNSTERpc3RyaW
+					J1dGlvblBvaW50MCagJKAihiBodHRwOi8vY3JsLmNhLm1vZi9jcmwvY3JsMTM0LmNybDALBgNVHQ8EBA
+					MCA8gwHQYDVR0OBBYEFMVOQL7boFSou4JTE450I21DC8K8MDsGA1UdJQQ0MDIGCCsGAQUFBwMCBggrBg
+					EFBQcDAwYIKwYBBQUHAwQGCCsGAQUFBwMIBggrBgEFBQcDCTANBgkqhkiG9w0BAQUFAAOCAQEAF6J1qz
+					3ZlFaQEaHeO53ECiwd0HBQISUGl3iaB1JAsnLAAI5G5/K+CD6I0xLGnk+XdTaPPR1C1JnKBu6f2x7kIA
+					ym5OMb758ysHwYvqcVB4CBIW2bCz8luKaSfFcEV469eApeBEBZHdVzuz09Bd6xwK+5cMrZPDoOZrJ6T1
+					axg+h+X6RH7fRF8b2p6MYQiiSI+b+FdFkZA6VO5zn2BiK1E/XcDiYJYqps8ggsuddST2iwdXfayLRN76
+					DAtjssCo7iYUNv18F+jvN+CzJJLydptgfpLY/xFqMj1xwci1F4vevAwbddHjII4041oI9NdY0T/Ed21A
+					9Nza28R7ao4neBXzGB+zCB+AIBATBWMEoxCzAJBgNVBAYTAkNOMQwwCgYDVQQKEwNNT0YxLTArBgNVBA
+					MTJFByaXZhdGUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IE9mIE1PRgIIEKYRB35KYHswCQYFKw4DAhoFAD
+					ANBgkqhkiG9w0BAQEFAASBgDiHSLeDcvsYMZgyB69mUM0aF5xABwRr2vVh6KH29hFFBFDE0OeBeRmTkH
+					JDPxis3e6KhSflVVjZrpxMggPrA8sGU2tf9U3S3R9LRTkmpD3bOT60eETtFAGRjKbxKbDQf+/Q4qExHy
+					ydffktajv2eml+3Crg4PoEQINyomdcS+qk
+				</detach>
+				<original>MGpxaXZj</original>
+			</authCredential>
+		</authen>
+		<accessControl>false</accessControl>
+		<attributes attributeType="portion">
+			<attr name="X509Certificate.SubjectDN" namespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509" />
+			<attr name="UMS.UserID" namespace="http://www.jit.com.cn/ums/ns/user" />
+			<attr name="鏈烘瀯瀛楀吀" namespace="http://www.jit.com.cn/ums/ns/user" />
+		</attributes>
+	</body>
+</message>
+
+<AttributeQuery xmlns="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	Resource="http://192.168.9.128:80/j2ee/">
+	<Subject xmlns="urn:oasis:names:tc:SAML:1.0:assertion">
+		<NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="_FF8080815BFB5CAB015BFBC7AE8A0003">CN=zhiwei_shi, EMAILADDRESS=zhiwei_shi@jit.com.cn, O=JIT, C=CN</NameIdentifier>
+		<SubjectConfirmation>
+			<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</ConfirmationMethod>
+			<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact-01</ConfirmationMethod>
+		</SubjectConfirmation>
+	</Subject>
+	<AttributeDesignator xmlns="urn:oasis:names:tc:SAML:1.0:assertion" AttributeName="X509Certificate.SubjectDN" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509"></AttributeDesignator>
+	<AttributeDesignator xmlns="urn:oasis:names:tc:SAML:1.0:assertion" AttributeName="X509Certificate.IssuerDN" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509"></AttributeDesignator>
+	<AttributeDesignator xmlns="urn:oasis:names:tc:SAML:1.0:assertion" AttributeName="X509Certificate.SerialNumber" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509"></AttributeDesignator>
+	<AttributeDesignator xmlns="urn:oasis:names:tc:SAML:1.0:assertion" AttributeName="X509Certificate.Base64" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509"></AttributeDesignator>
+</AttributeQuery>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<Request xmlns="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	IssueInstant="2017-05-12T10:32:40.679Z" MajorVersion="1" MinorVersion="1" RequestID="_d4523c7feff505d4aa43a4c9eda1d419">
+	<RespondWith>saml:AuthenticationStatement</RespondWith>
+	<AssertionArtifact>AAFUpNAKzer1YHCBoalJw7SVTJNgaYu8mgERDzkUQDS32C4wmgOREVEU</AssertionArtifact>
+</Request>
+
+{Protocol-Version=1.1,
+Request-uri=query, App-Flag=saml11,
+Content-Length=535, _ias_server_ip=192.168.9.112,
+Protocol-Type=HTTP, User-Agent=Jakarta Commons-HttpClient/3.1,
+Request-Type=query, Request-method=POST,
+Request-Line=POST /saml11/query HTTP/1.1,
+signClientIp=192.168.9.128, Host=192.168.9.112:6180}
+
+<Request xmlns="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	IssueInstant="2017-05-15T03:16:22.047Z" MajorVersion="1" MinorVersion="1" RequestID="_50856c020c6052dd3d14a894b3a25a51">
+	<RespondWith>saml:AuthorizationDecisionStatement</RespondWith>
+	<AuthorizationDecisionQuery Resource="http://192.168.9.128:80/j2ee/">
+		<Subject xmlns="urn:oasis:names:tc:SAML:1.0:assertion">
+			<NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="_FF8080815BFB5CAB015C0A1BCF66000E">CN=安全保密管理员, O=jit, C=cn</NameIdentifier>
+			<SubjectConfirmation>
+				<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</ConfirmationMethod>
+				<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact-01</ConfirmationMethod>
+			</SubjectConfirmation>
+		</Subject>
+		<Action xmlns="urn:oasis:names:tc:SAML:1.0:assertion" Namespace="urn:oasis:names:tc:SAML:1.0:action:ghpp">GET</Action>
+		<Action xmlns="urn:oasis:names:tc:SAML:1.0:assertion" Namespace="urn:oasis:names:tc:SAML:1.0:action:ghpp">POST</Action>
+	</AuthorizationDecisionQuery>
+</Request>
