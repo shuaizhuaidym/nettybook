@@ -32,9 +32,9 @@ public class HttpFileServer {
 							ch.pipeline().addLast("file-server-handler", new HttpFileServerHandler(url));
 						}
 					});
-			ChannelFuture future = boot.bind("192.168.1.106", 8888).sync();
+			ChannelFuture future = boot.bind("127.0.0.1", 8888).sync();
 			
-			System.out.println("http://192.168.1.106:8888 is ready.");
+			System.out.println("http://127.0.0.1:8888 is ready.");
 			
 			future.channel().closeFuture().sync();
 		} catch (Exception e) {

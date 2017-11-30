@@ -93,7 +93,7 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpR
 		buf.append("<h3>\r\n");
 		buf.append(dirPath).append("目录：").append("</h3>\r\n");
 
-		buf.append("<ul><li>链接：<a href=\"../\">..</a></li>\r\n");
+		buf.append("<ul><li>上级目录：<a href=\"../\">..</a></li>\r\n");
 		for (File f : dir.listFiles()) {
 			if (f.isHidden() || !f.canRead()) {
 				continue;
@@ -102,14 +102,14 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpR
 			if (!ALLOWED_FILE_NAME.matcher(name).matches()) {
 				continue;
 			}
-			buf.append("<li><a href=\"").append(name).append("\">").append("</a></li>\r\n");
-			buf.append("</ul></body></html>\r\n");
-
-			ByteBuf bbuf = Unpooled.copiedBuffer(buf, CharsetUtil.UTF_8);
-			response.content().writeBytes(bbuf);
-			bbuf.release();
-			ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
+			buf.append("<li><a href=\"").append(name).append("\">").append(name).append("</a></li>\r\n");
 		}
+		buf.append("</ul></body></html>\r\n");
+		
+		ByteBuf bbuf = Unpooled.copiedBuffer(buf, CharsetUtil.UTF_8);
+		response.content().writeBytes(bbuf);
+		bbuf.release();
+		ctx.writeAndFlush(response).addListener(ChannelFutureListener.CLOSE);
 	}
 
 	private void sendRedirect(ChannelHandlerContext ctx, String url) {
@@ -148,7 +148,7 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpR
 			return;
 		}
 		if (file.isDirectory()) {
-			if (path.endsWith("/")) {
+			if (path.endsWith(File.separator)) {
 				sendListing(ctx, file);
 			} else {
 				sendRedirect(ctx, uri + '/');
