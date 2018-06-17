@@ -31,7 +31,6 @@ import java.util.regex.Pattern;
 
 import javax.activation.MimetypesFileTypeMap;
 
-;
 public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 	private final String url;
 
