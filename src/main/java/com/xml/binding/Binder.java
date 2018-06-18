@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.jibx.binding.generator.BindGen;
 import org.jibx.binding.generator.BindGenCommandLine;
-import org.jibx.binding.model.BindingHolder;
 import org.jibx.runtime.JiBXException;
 import org.jibx.schema.generator.SchemaGen;
 
@@ -17,8 +16,9 @@ public class Binder {
 		if ((args.length > 0) && (parms.processArgs(args))) {
 
 			BindGen gen = new BindGen(parms.getGlobal());
+			//(Boolean abstr, List classes
 			gen.generate(parms.getAbstract(), parms.getExtraArgs());
-			BindingHolder root = gen.finish(parms.getBindingName());
+			org.jibx.binding.model.BindingHolder root = gen.finish(parms.getBindingName());
 			List bindings = gen.validateFiles(parms.getGeneratePath(), parms.getLocator(), root);
 			if (!parms.isBindingOnly()) {
 
