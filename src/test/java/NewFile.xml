@@ -1,0 +1,52 @@
+<Response xmlns="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:saml="urn:oasis:names:tc:SAML:1.0:assertion" xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	InResponseTo="_79397c614f8bf1abaf8523e32c6816a1" IssueInstant="2018-01-30T07:20:53.516Z" MajorVersion="1" MinorVersion="1" ResponseID="_07717bf09127f212f095acbd555e0c43">
+	<Status>
+		<StatusCode Value="samlp:Success"></StatusCode>
+	</Status>
+	<Assertion xmlns="urn:oasis:names:tc:SAML:1.0:assertion" AssertionID="_000000006145B137016145F0A1E8000E" IssueInstant="2018-01-30T07:20:53.480Z" Issuer="192.168.9.113" MajorVersion="1" MinorVersion="1">
+		<Conditions NotBefore="2018-01-30T07:20:53.480Z" NotOnOrAfter="2018-01-30T07:35:53.480Z"></Conditions>
+		<AttributeStatement>
+			<Subject>
+				<NameIdentifier Format="urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName" NameQualifier="_000000006145B137016145F0A1E8000E">CN=王义, O=JIT, C=CN</NameIdentifier>
+				<SubjectConfirmation>
+					<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</ConfirmationMethod>
+					<ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact-01</ConfirmationMethod>
+				</SubjectConfirmation>
+			</Subject>
+			<Attribute AttributeName="_saml_cert_subject" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>CN=王义, O=JIT, C=CN</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.Version" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>3</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="_saml_cert_authen_result" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>true</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.SerialNumber" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>2C0BFC8F6AD5E576</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.SubjectDN" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>CN=王义, O=JIT, C=CN</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="_saml_pki_cert_subject" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>CN=王义,O=JIT,C=CN</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.NotBefore" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>2017-09-08T05:39:59.000Z</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.NotAfter" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>2018-09-08T05:39:59.000Z</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.SigAlgName" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>SHA1withRSA</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.IssuerDN" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>CN=DEMOCA, O=JIT, C=CN</AttributeValue>
+			</Attribute>
+			<Attribute AttributeName="X509Certificate.Base64" AttributeNamespace="http://www.jit.com.cn/cinas/ias/ns/saml/saml11/X.509">
+				<AttributeValue>MIIB+DCCAWGgAwIBAgIILAv8j2rV5XYwDQYJKoZIhvcNAQEFBQAwLDELMAkGA1UEBhMCQ04xDDAKBgNVBAoMA0pJVDEPMA0GA1UEAwwGREVNT0NBMB4XDTE3MDkwODA1Mzk1OVoXDTE4MDkwODA1Mzk1OVowLDELMAkGA1UEBhMCQ04xDDAKBgNVBAoMA0pJVDEPMA0GA1UEAwwG546L5LmJMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIfWBG83MyxcHKpVEXKj/pBdpSvUAN3Z4yLuR8Tq5KNAnWtvsWbD9dLgvnwM3m/kB0b04hJlb10jpNjijTOJAFsdxb0NFWKdHYlYfvSzs+aRMG5h5QSt/xa+QhoyedA4XTtXVqKhspJ34tDGybFY5oA6vhRGXOZsqHf0U0G9vhYwIDAQABoyMwITALBgNVHQ8EBAMCBsAwEgYIKlaZwvRxAAUEBgwEMTAwMTANBgkqhkiG9w0BAQUFAAOBgQCHjNl254EO8zo4EDRZr3dPjFAYfK7R8GA4bG0o5kqTJYIlDoMVdLCLSpHsC/6GDjpMt+YErL6oMdEBTVfYVpj3DobLIyxLVmrCLKK8OAW2QcRzyLphfh1vbKJG05YWG5cffbJgE6um8/xcBFlHY6vGKAatDOcFaY9hLt7YxFddmQ==
+				</AttributeValue>
+			</Attribute>
+		</AttributeStatement>
+	</Assertion>
+</Response>

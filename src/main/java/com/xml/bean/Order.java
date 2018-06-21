@@ -31,6 +31,23 @@ public class Order {
 	private Date shipDate;
 	private Float total;
 	
+	public Order() {
+		super();
+	}
+
+	public Order(long orderNumber, Customer customer, Address billTo, Shipping shipping, Address shipTo,
+			List<Item> items, Date orderDate, Date shipDate, Float total) {
+		super();
+		this.orderNumber = orderNumber;
+		this.customer = customer;
+		this.billTo = billTo;
+		this.shipping = shipping;
+		this.shipTo = shipTo;
+		this.items = items;
+		this.orderDate = orderDate;
+		this.shipDate = shipDate;
+		this.total = total;
+	}
 	public long getOrderNumber() {
 		return orderNumber;
 	}

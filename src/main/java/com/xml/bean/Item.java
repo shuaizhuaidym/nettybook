@@ -16,6 +16,18 @@ public class Item {
 	/** Price per unit. */
 	private float price;
 
+	public Item() {
+		super();
+	}
+
+	public Item(String id, String description, float price, int quantity) {
+		super();
+		this.id = id;
+		this.description = description;
+		this.quantity = quantity;
+		this.price = price;
+	}
+
 	public String getId() {
 		return id;
 	}
@@ -47,5 +59,5 @@ public class Item {
 	public void setPrice(float price) {
 		this.price = price;
 	}
-	
+
 }

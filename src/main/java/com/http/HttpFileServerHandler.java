@@ -29,8 +29,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.regex.Pattern;
 
-import javax.activation.MimetypesFileTypeMap;
-
 public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpRequest> {
 	private final String url;
 
@@ -53,7 +51,7 @@ public class HttpFileServerHandler extends SimpleChannelInboundHandler<FullHttpR
 	}
 
 	public static void setCotentTypeHeader(HttpResponse resp, File f) {
-		MimetypesFileTypeMap m = new MimetypesFileTypeMap();
+		javax.activation.MimetypesFileTypeMap m = new javax.activation.MimetypesFileTypeMap();
 		resp.headers().set(Names.CONTENT_TYPE, "");
 	}
 

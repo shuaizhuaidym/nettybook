@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order xmlns="http://xml.com/bean" orderNumber="10001" orderDate="2018-06-20T05:57:00.512Z" shipDate="2018-06-20T05:57:00.512Z" total="1280.0">
+    <customer customerNumber="1">
+        <firstName>San</firstName>
+        <lastName>Zhang</lastName>
+        <middleName>Feng</middleName>
+    </customer>
+    <billTo>
+        <street1>Zhichun Road</street1>
+        <street2>Zhonggc Road</street2>
+        <state>bj</state>
+        <city>bj</city>
+        <country>China</country>
+        <postCode>100086</postCode>
+    </billTo>
+    <shipping>INTERNATIONAL_EXPRESS</shipping>
+    <shipTo>
+        <street1>Zhichun Road</street1>
+        <street2>Zhonggc Road</street2>
+        <state>bj</state>
+        <city>bj</city>
+        <country>China</country>
+        <postCode>100086</postCode>
+    </shipTo>
+    <item quantity="2" price="12.0">
+        <id>i001</id>
+        <description>Goods</description>
+    </item>
+</order>

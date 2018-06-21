@@ -1,4 +1,15 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://xml.com/bean" elementFormDefault="qualified" targetNamespace="http://xml.com/bean">
+  <xs:complexType name="address">
+    <xs:sequence>
+      <xs:element type="xs:string" name="street1" minOccurs="0"/>
+      <xs:element type="xs:string" name="street2" minOccurs="0"/>
+      <xs:element type="xs:string" name="state" minOccurs="0"/>
+      <xs:element type="xs:string" name="city" minOccurs="0"/>
+      <xs:element type="xs:string" name="country" minOccurs="0"/>
+      <xs:element type="xs:string" name="postCode" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element type="tns:order" name="order"/>
   <xs:complexType name="order">
     <xs:sequence>
       <xs:element name="customer" minOccurs="0">
@@ -40,15 +51,4 @@
     <xs:attribute type="xs:dateTime" name="shipDate"/>
     <xs:attribute type="xs:float" name="total"/>
   </xs:complexType>
-  <xs:complexType name="address">
-    <xs:sequence>
-      <xs:element type="xs:string" name="street1" minOccurs="0"/>
-      <xs:element type="xs:string" name="street2" minOccurs="0"/>
-      <xs:element type="xs:string" name="state" minOccurs="0"/>
-      <xs:element type="xs:string" name="city" minOccurs="0"/>
-      <xs:element type="xs:string" name="country" minOccurs="0"/>
-      <xs:element type="xs:string" name="postCode" minOccurs="0"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element type="tns:order" name="order"/>
 </xs:schema>
